@@ -1,24 +1,13 @@
 require('dotenv').config();
-const mongoose = require('mongoose');
-const Model = require('./models/model');
-
-const port = process.env.PORT || 3000
-
-const express = require('express')
-const app = express()
+const port = process.env.PORT || 3000;
+const express = require('express');
+const app = express();
 app.use(express.json());
 
+app.get('/', (req, res) => {
+  res.send("Welcome to my porfolio");
+});
 
-
-
-
-mongoose.connect(process.env.MONGO_URI)
-  .then(() => {
-    console.log('Connected to the database')
-    app.listen(port, () => {
-      console.log(`Listening on port ${port}`)
-    })
-  })
-  .catch((error) => {
-    console.log(error)
-  })
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
+});
