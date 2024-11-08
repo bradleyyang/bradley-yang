@@ -1,19 +1,19 @@
 import { useNavigate } from "react-router-dom";
 
-const Contact = () => {
+const Home = () => {
 	const navigate = useNavigate();
 
   return (
     <div>
       <button
         onClick={() => {
-					navigate('/');
+					navigate('/contact');
 				}}
       >
-        Go to home
+        Go to Contact
       </button>
     </div>
   );
 };
 
-export default Contact;
+export default Home;

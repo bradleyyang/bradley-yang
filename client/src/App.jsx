@@ -1,13 +1,24 @@
-import Layout from "./components/Layout";
+import Home from './components/Home';
+import Contact from './components/Contact';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
 
 function App() {
+  const router = createBrowserRouter([
+    {
+      path: '/',
+      element: <Home />,
+    },
+    {
+      path: '/contact',
+      element: <Contact />,
+    },
+
+  ]);
 
   return (
-    <div>
-      <Layout />
-    </div>
-  )
+    <RouterProvider router={router} />
+  );
 }
 
 export default App
