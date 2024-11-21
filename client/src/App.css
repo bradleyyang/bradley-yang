@@ -71,7 +71,11 @@ body {
 
 .introduction {
     display: flex;
-    margin-top: 10px;
+    font-weight: 200;
+    font-family: cursive;
+    font-size: xx-large;
+    margin-top: -20px;
+    margin-bottom: -20px;
 }
 
 .footer {
@@ -92,4 +96,30 @@ body {
 
 .socials a:hover {
     color: #00538C;
+}
+
+.hyperlink-social {
+    color: #00538C;
+    text-decoration: none;
+}
+
+.hyperlink-social:hover {
+    text-decoration: underline;
+}
+
+.socials-intro {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.listoverview-projects {
+    list-style-type: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 200px;
 }
