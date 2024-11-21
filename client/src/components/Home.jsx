@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 const Home = () => {
@@ -7,16 +8,20 @@ const Home = () => {
 	return (
 		<div className="homepage">
 			<nav className="navbar">
-				<div className="logo">Bradley</div>
+				<div className="logo">
+					<a href="/" style={{textDecoration: "none", color: "inherit"}}>
+						Bradley Yang
+					</a>
+				</div>
 				<div className="menu">
-					<button
+					<button style={{marginRight: "5px"}}
 						onClick={() => {
 							navigate("/contact");
 						}}
 					>
 						Contact
 					</button>
-					<button
+					<button style={{marginRight: "5px"}}
 						onClick={() => {
 							navigate("/projects");
 						}}
@@ -33,15 +38,15 @@ const Home = () => {
 			</nav>
 			<div className="introduction">
 				<p>Hi, I'm&nbsp;</p>
-				<p className="colorful-text">Bradley Yang</p>
+				<p className="text-effect">Bradley Yang.</p>
 			</div>
 			<div>
-				<p>I'm a second year math student at the University of Waterloo.</p>
-				<p>I'm currently working at Aethos Labs as a Software Developer.</p>
+				Math student at the University of Waterloo | Incoming Software Developer at Aethos Labs
 			</div>
 			<div className="footer">
 				<p>&copy; 2024 Bradley Yang</p>
 				<p className="socials">
+					<a href="mailto: bradley.yang023@gmail.com"><FontAwesomeIcon icon={faEnvelope} /></a>
 					<a target="_blank" href="https://github.com/bradleyyang"><FontAwesomeIcon icon={faGithub} /></a>
 					<a target="_blank" href="https://linkedin.com/in/bradley-yang"><FontAwesomeIcon icon={faLinkedin} /></a>
 				</p>

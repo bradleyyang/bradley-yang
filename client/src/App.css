@@ -17,19 +17,61 @@ body {
 }
 
 .logo {
+    font-size: x-large;
+    font-weight: 500;
+    background: -webkit-linear-gradient(#30cfd0 0%, #330867);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-effect {
     margin-right: auto;
+    --s: 0.1em;
+    --c: #00538C;
+
+    color: #0000;
+    padding-bottom: var(--s);
+    background:
+        linear-gradient(90deg, var(--c) 50%, #000 0) calc(100% - var(--_p, 0%))/200% 100%,
+        linear-gradient(var(--c) 0 0) 0% 100%/var(--_p, 0%) var(--s) no-repeat;
+    -webkit-background-clip: text, padding-box;
+    background-clip: text, padding-box;
+    transition: 0.5s;
+}
+
+.text-effect:hover {
+    --_p: 100%;
 }
 
 .menu {
+    display: flex;
     margin-left: auto;
+    align-items: center;
+}
+
+.menu button {
+    cursor: pointer;
+    background-color:#0a0a23;
+    color: #fff;
+    border-radius: 5px;
+    border-color: black;
+    border-width: 1px;
+    min-height: 25px;
+    min-width: 60px;
+}
+
+.menu button:hover {
+    background-color: white;
+    border-color: black;
+    color: black;
+    transition: 0.7s;
 }
 
 .introduction {
     display: flex;
-}
-
-.colorful-text {
-    color: rgb(100, 149, 237);
+    margin-top: 10px;
 }
 
 .footer {
@@ -45,6 +87,9 @@ body {
 .socials a {
     text-decoration: none;
     color: inherit;
+    cursor: pointer;
 }
 
-
+.socials a:hover {
+    color: #00538C;
+}
