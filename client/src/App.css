@@ -114,10 +114,10 @@ body {
 }
 
 .projects-overview {
-    border: solid #d0d0d0;
+    border: solid #d0d0d0 1px;
     padding-left: 10px;
     padding-right: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -128,4 +128,15 @@ body {
 
 .project-title {
     font-size: large;
+}
+
+.see-more {
+    display: flex;
+    justify-content: center;
+    color: gray;
+    cursor: pointer;
+}
+
+.see-more:hover {
+    color: #00538C;
 }
