@@ -9,9 +9,9 @@ const Home = () => {
 		<div className="homepage">
 			<nav className="navbar">
 				<div className="logo">
-					<a href="/" style={{ textDecoration: "none", color: "inherit" }}>
+					<div onClick={() => {navigate("/")}} style={{ textDecoration: "none", color: "inherit", cursor: "pointer" }}>
 						Bradley Yang
-					</a>
+					</div>
 				</div>
 				<div className="menu">
 					<button style={{ marginRight: "5px" }}
@@ -51,13 +51,13 @@ const Home = () => {
 			</div>
 			<div className="overview-topics">
 				<h3 className="subheading-homepage">Projects</h3>
-				<div className="grid-container">
-					<div>
-						Project one
-					</div>
-					<div>
-						Project two
-					</div>
+				<div onClick={() => {navigate("/projects")}} className="projects-overview">
+					<p className="project-title">Memo</p>
+					<p>flkdsjf</p>
+				</div>
+				<div onClick={() => {navigate("/projects")}} className="projects-overview">
+					<p className="project-title">Sparksense</p>
+					<p>flkdjfl</p>
 				</div>
 			</div>
 			<div className="footer">

@@ -113,8 +113,19 @@ body {
     align-items: center;
 }
 
-.grid-container {
-    display: grid;
-    gap: 50px;
-    
+.projects-overview {
+    border: solid #d0d0d0;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.projects-overview:hover {
+    border-color: #00538C;
+}
+
+.project-title {
+    font-size: large;
 }
