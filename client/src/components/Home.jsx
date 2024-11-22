@@ -51,17 +51,14 @@ const Home = () => {
 			</div>
 			<div className="overview-topics">
 				<h3 className="subheading-homepage">Projects</h3>
-				<ul className="listoverview-projects">
-					<li>Memo</li>
-					<li>SparkSense</li>
-					<li>Restaurant Roulette</li>
-					<li>Distractisaurus</li>
-					<li>lfkjdslkf</li>
-					<li>fdlksjfds</li>
-					<li>lkdfjslj</li>
-					<li>fldksjflds</li>
-					<li>flkdsjfls</li>
-				</ul>
+				<div className="grid-container">
+					<div>
+						Project one
+					</div>
+					<div>
+						Project two
+					</div>
+				</div>
 			</div>
 			<div className="footer">
 				<p>&copy; 2024 Bradley Yang</p>
