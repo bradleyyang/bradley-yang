@@ -74,7 +74,7 @@ body {
     align-items: center;
 }
 
-.projects-overview {
+.subheading-overview {
     border: solid #d0d0d0 1px;
     padding-left: 10px;
     padding-right: 10px;
@@ -83,21 +83,48 @@ body {
     cursor: pointer;
 }
 
-.projects-overview:hover {
+.subheading-overview:hover {
     border-color: #00538C;
 }
 
-.project-title {
+.subheading-title {
     font-size: large;
 }
 
 .see-more {
     display: flex;
     justify-content: center;
-    color: gray;
-    cursor: pointer;
 }
 
-.see-more:hover {
+.see-more-button:hover {
     color: #00538C;
+}
+
+.see-more-button {
+    cursor: pointer;
+    color: gray;
+    width: fit-content;
+}
+
+.back-to-home {
+    cursor: pointer;
+    background-color:#0a0a23;
+    color: #fff;
+    border-radius: 5px;
+    border-color: black;
+    border-width: 1px;
+    min-height: 25px;
+    min-width: 60px;
+}
+
+.back-to-home:hover {
+    background-color: white;
+    border-color: black;
+    color: black;
+    transition: 0.7s;
+}
+
+.job-title {
+    font-style: italic;
+    margin-top: -10px;
 }
