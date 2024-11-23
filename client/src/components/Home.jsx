@@ -47,12 +47,12 @@ const Home = () => {
 			</div>
 			<div className="overview-topics">
 				<h3 className="subheading-homepage">Experience</h3>
-				<div onClick={() => { navigate("/experience") }} className="subheading-overview">
+				<div onClick={() => { navigate("/experience/aethoslabs") }} className="subheading-overview">
 					<p className="subheading-title">Aethos Labs</p>
 					<p className="job-title">Software Developer Intern</p>
 					<p>Incoming full stack developer intern for Winter 2025.</p>
 				</div>
-				<div onClick={() => { navigate("/experience") }} className="subheading-overview">
+				<div onClick={() => { navigate("/experience/haneco") }} className="subheading-overview">
 					<p className="subheading-title">Haneco Lighting Canada Inc.</p>
 					<p className="job-title">Sales and Marketing Intern</p>
 					<p>Cold called potential clients and scheduled lighting/EV charging audits for commercial facilities.</p>
@@ -64,7 +64,7 @@ const Home = () => {
 				</div>
 
 				<h3 className="subheading-homepage">Projects</h3>
-				<div onClick={() => { navigate("/projects") }} className="subheading-overview">
+				<div onClick={() => { navigate("/projects/memo") }} className="subheading-overview">
 					<p className="subheading-title">Memo</p>
 					<p>
 						Automates budget tracking by saving receipts with a snapshot of your camera. 
@@ -72,7 +72,7 @@ const Home = () => {
 						This project won the best beginner prize at McGill University's annual hackathon.
 					</p>
 				</div>
-				<div onClick={() => { navigate("/projects") }} className="subheading-overview">
+				<div onClick={() => { navigate("/projects/sparksense") }} className="subheading-overview">
 					<p className="subheading-title">SparkSense</p>
 					<p>Predicts likelihood of wildfires for cities in Canada and sends warnings via Twilio's SMS messaging API. It leverages the power of the Gemini LLM.</p>
 				</div>
