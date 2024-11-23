@@ -5,13 +5,6 @@ body {
     padding-right: 5%;
 }
 
-/* Not sure if the flex-wrap has any effect here */
-/* .homepage {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-} */
-
 .navbar {
     display: flex;
 }
@@ -19,30 +12,6 @@ body {
 .logo {
     font-size: x-large;
     font-weight: 500;
-    background: -webkit-linear-gradient(#30cfd0 0%, #330867);
-    background-clip: text;
-    color: transparent;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.text-effect {
-    margin-right: auto;
-    --s: 0.1em;
-    --c: #00538C;
-
-    color: #0000;
-    padding-bottom: var(--s);
-    background:
-        linear-gradient(90deg, var(--c) 50%, #000 0) calc(100% - var(--_p, 0%))/200% 100%,
-        linear-gradient(var(--c) 0 0) 0% 100%/var(--_p, 0%) var(--s) no-repeat;
-    -webkit-background-clip: text, padding-box;
-    background-clip: text, padding-box;
-    transition: 0.5s;
-}
-
-.text-effect:hover {
-    --_p: 100%;
 }
 
 .menu {
@@ -69,13 +38,6 @@ body {
     transition: 0.7s;
 }
 
-.introduction {
-    display: flex;
-    font-weight: 200;
-    font-size: xx-large;
-    margin-top: -20px;
-    margin-bottom: -20px;
-}
 
 .footer {
     display: flex;

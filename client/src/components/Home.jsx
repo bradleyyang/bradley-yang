@@ -9,7 +9,7 @@ const Home = () => {
 		<div className="homepage">
 			<nav className="navbar">
 				<div className="logo">
-					<div onClick={() => {navigate("/")}} style={{ textDecoration: "none", color: "inherit", cursor: "pointer" }}>
+					<div style={{ textDecoration: "none", color: "inherit"}}>
 						Bradley Yang
 					</div>
 				</div>
@@ -37,12 +37,8 @@ const Home = () => {
 					</button>
 				</div>
 			</nav>
-			<hr style={{marginTop: "15px"}}/>
-			<div className="introduction">
-				<p>Hi, I'm&nbsp;</p>
-				<p className="text-effect">Bradley Yang</p>
-			</div>
-			<div>
+			<hr style={{marginTop: "15px", marginBottom: "15px"}}/>
+			<div style={{fontSize: "large"}}>
 				Math @ UWaterloo, incoming Software Developer at &nbsp;<FontAwesomeIcon style={{color: "#00538C"}} icon={faExternalLink} />&nbsp;<a className="hyperlink-social" href="https://www.aethoslabs.com/" target="_blank">Aethos Labs</a>.
 			</div>
 			<div className="socials-intro">
