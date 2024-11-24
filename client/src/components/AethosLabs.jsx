@@ -1,4 +1,6 @@
 import { useNavigate } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faExternalLink } from '@fortawesome/free-solid-svg-icons';
 
 const AethosLabs = () => {
     const navigate = useNavigate();
@@ -38,7 +40,10 @@ const AethosLabs = () => {
             </nav>
             <hr style={{ marginTop: "15px", marginBottom: "15px" }} />
             <div>
-                aethos labs experience
+                I will be working as a full stack developer intern at Aethos Labs this Winter 2025.
+            </div>
+            <div style={{marginTop: "15px"}}>
+                <FontAwesomeIcon style={{ color: "#00538C" }} icon={faExternalLink} />&nbsp;<a className="hyperlink-social" href="https://www.aethoslabs.com/" target="_blank">Learn more about Aethos Labs</a>
             </div>
         </div>
     );
