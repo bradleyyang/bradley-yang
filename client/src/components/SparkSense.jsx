@@ -1,4 +1,6 @@
 import { useNavigate } from "react-router-dom";
+import sparksenseDashboard from "../assets/images/sparksense-dashboard.png";
+import sparksenseDemo from "../assets/images/sparksense-demo.png";
 
 const SparkSense = () => {
     const navigate = useNavigate();
@@ -40,6 +42,8 @@ const SparkSense = () => {
             <div>
                 SparkSense project
             </div>
+            <img src={sparksenseDashboard} alt="sparksense dashboard" />
+            <img src={sparksenseDemo} alt="sparksense demo" />
         </div>
     );
 };
