@@ -1,4 +1,7 @@
 import { useNavigate } from "react-router-dom";
+import memodemo from "../assets/images/memodemo.jpg";
+import memoscreenshot from "../assets/images/memoscreenshot.jpg";
+import memologo from "../assets/images/memologo.jpg";
 
 const Memo = () => {
     const navigate = useNavigate();
@@ -40,6 +43,9 @@ const Memo = () => {
             <div>
                 Memo project
             </div>
+            <img src={memodemo} alt="memo-demo" />
+            <img src={memoscreenshot} alt="memo-screenshot" />
+            <img src={memologo} alt="memo-logo" />
         </div>
     );
 };
