@@ -42,8 +42,10 @@ const SparkSense = () => {
             <div>
                 SparkSense project
             </div>
-            <img src={sparksenseDashboard} alt="sparksense dashboard" />
-            <img src={sparksenseDemo} alt="sparksense demo" />
+            <div>
+                <img src={sparksenseDashboard} alt="sparksense dashboard" />
+                <img src={sparksenseDemo} alt="sparksense demo" />
+            </div>
         </div>
     );
 };

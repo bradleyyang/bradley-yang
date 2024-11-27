@@ -43,9 +43,11 @@ const Memo = () => {
             <div>
                 Memo project
             </div>
-            <img src={memodemo} alt="memo-demo" />
-            <img src={memoscreenshot} alt="memo-screenshot" />
-            <img src={memologo} alt="memo-logo" />
+            <div>
+                <img src={memodemo} alt="memo-demo" />
+                <img src={memoscreenshot} alt="memo-screenshot" />
+                <img src={memologo} alt="memo-logo" />
+            </div>
         </div>
     );
 };
