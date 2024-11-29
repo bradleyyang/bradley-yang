@@ -35,8 +35,16 @@ const Experience = () => {
                 </div>
             </nav>
             <hr style={{ marginTop: "15px", marginBottom: "15px" }} />
-            <div>
-                More experiences coming...
+            <h3 className="subheading-homepage">Experience</h3>
+            <div onClick={() => { navigate("/experience/aethoslabs") }} className="subheading-overview">
+                <p className="subheading-title">Aethos Labs</p>
+                <p className="job-title">Software Developer Intern</p>
+                <p>Incoming full stack developer intern for Winter 2025.</p>
+            </div>
+            <div onClick={() => { navigate("/experience/haneco") }} className="subheading-overview">
+                <p className="subheading-title">Haneco Lighting Canada Inc.</p>
+                <p className="job-title">Sales and Marketing Intern</p>
+                <p>Cold called potential clients and scheduled lighting/EV charging audits for commercial facilities.</p>
             </div>
         </div>
     );
