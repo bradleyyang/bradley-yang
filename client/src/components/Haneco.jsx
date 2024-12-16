@@ -40,12 +40,11 @@ const Haneco = () => {
             </nav>
             <hr style={{ marginTop: "15px", marginBottom: "15px" }} />
             <div>
-                My internship at Haneco involved reaching out to businesses by means of cold emails and phone calls.
-                I collaborated and worked with 5 interns and we managed to secure over 200 appointments (both lighting and EV charging audits combined)
-                over the span of 4 months. I developed communication and prospecting skills, especially with how to effectively negotiate with facility/operations managers.
-                Furthermore, I worked with CRM systems in order to track calls and prospective leads. Ultimately, my outreach efforts established pipelines leading to business opportunities valued at hundreds of thousands of dollars.
+                During my internship at Haneco, I focused on business development by reaching out to potential clients through cold emails and phone calls.
+                Collaborating with a team, I enhanced my communication and prospecting skills, particularly in negotiating with facility and operations managers.
+                I also utilized CRM systems to manage leads and track outreach efforts, helping to establish pipelines that generated significant business opportunities.
             </div>
-            <div style={{marginTop: "15px"}}>
+            <div style={{ marginTop: "15px" }}>
                 <FontAwesomeIcon style={{ color: "#00538C" }} icon={faExternalLink} />&nbsp;<a className="hyperlink-social" href="https://www.haneco.ca/" target="_blank">Learn more about Haneco</a>
             </div>
         </div>
