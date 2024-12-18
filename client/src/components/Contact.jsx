@@ -1,52 +1,89 @@
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
+import "../Contact.css";
+import "../App.css";
+
 
 const Contact = () => {
     const navigate = useNavigate();
-    const [name, setName] = useState("");
+
+    const [buttonText, setButtonText] = useState("Submit");
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        setButtonText("Submitted");
+
+        setTimeout(() => {
+            setButtonText("Submit");
+        }, 1000);
+    };
+
+    const [formData, setFormData] = useState({
+        email: "",
+        name: "",
+        message: "",
+    });
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData((prevData) => ({
+            ...prevData,
+            [name]: value,
+        }));
+    };
+
     return (
-        <div>
+        <div className="contact-page">
             <nav className="navbar">
-                <button className="back-to-home"
-                    onClick={() => {
-                        navigate('/');
-                    }}
-                >
-                    Back to home
+                <button className="back-button" onClick={() => {
+                    navigate("/");
+                }}>
+                    Home
                 </button>
                 <div className="menu">
-                    <button style={{ marginRight: "5px" }}
-                        onClick={() => {
-                            navigate("/experience");
-                        }}>
+                    <button style={{ marginRight: "5px" }} onClick={() => navigate("/experience")}>
                         Experience
                     </button>
-
-                    <button style={{ marginRight: "5px" }}
-                        onClick={() => {
-                            navigate("/projects");
-                        }}
-                    >
+                    <button style={{ marginRight: "5px" }} onClick={() => navigate("/projects")}>
                         Projects
                     </button>
-                    <button
-                        onClick={() => {
-                            navigate("/contact");
-                        }}
-                    >
-                        Contact
-                    </button>
+                    <button style={{ marginRight: "5px" }} className="active">Contact</button>
                 </div>
             </nav>
             <hr style={{ marginTop: "15px", marginBottom: "15px" }} />
-            <div style={{width: "100%"}}>
-                <form style={{display: "flex", flexDirection: "column", width: "80%", justifyContent: "center"}}>
-                    <input placeholder="Email" type="text" value={name} onChange={(e) => setName(e.target.value)} />
-                    <input placeholder="Name" type="text" value={name} onChange={(e) => setName(e.target.value)} />
-                    <input placeholder="Message" type="text" value={name} onChange={(e) => setName(e.target.value)} />
-
-                    <button style={{height: "20px", width: "200px"}}>
-                        Submit
+            <div className="form-container">
+                <form className="contact-form" onSubmit={handleSubmit}>
+                    <input
+                        className="input-field"
+                        placeholder="Email"
+                        type="text"
+                        name="email"
+                        value={formData.email}
+                        onChange={handleChange}
+                        required="true"
+                        style={{ height: "25px" }}
+                    />
+                    <input
+                        className="input-field"
+                        placeholder="Name"
+                        type="text"
+                        name="name"
+                        value={formData.name}
+                        onChange={handleChange}
+                        required="true"
+                        style={{ height: "25px" }}
+                    />
+                    <textarea
+                        className="input-field"
+                        placeholder="Message"
+                        name="message"
+                        value={formData.message}
+                        onChange={handleChange}
+                        required="true"
+                        style={{ height: "100px", resize: "vertical" }}
+                    ></textarea>
+                    <button className="submit-button" type="submit">
+                        {buttonText}
                     </button>
                 </form>
             </div>

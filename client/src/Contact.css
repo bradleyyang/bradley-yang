@@ -1,0 +1,32 @@
+
+.form-container {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+    min-width: 400px;
+}
+
+.submit-button {
+    cursor: pointer;
+    background-color:#0a0a23;
+    color: #fff;
+    border-radius: 5px;
+    border-color: black;
+    border-width: 1px;
+    min-height: 30px;
+    min-width: 60px;
+    align-self: center;
+}
+
+.submit-button:hover {
+    background-color: white;
+    border-color: black;
+    color: black;
+    transition: 0.7s;
+}

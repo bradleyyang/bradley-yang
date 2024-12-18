@@ -5,17 +5,16 @@ import memologo from "../assets/images/memologo.jpg";
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+
 const Memo = () => {
     const navigate = useNavigate();
     return (
         <div>
             <nav className="navbar">
-                <button className="back-to-home"
-                    onClick={() => {
-                        navigate('/');
-                    }}
-                >
-                    Back to home
+                <button className="back-button" onClick={() => {
+                    navigate(-1);
+                }}>
+                    Back
                 </button>
                 <div className="menu">
                     <button style={{ marginRight: "5px" }}
@@ -46,7 +45,7 @@ const Memo = () => {
                 <h1 style={{ display: "flex", justifyContent: "center" }}>
                     Memo Project
                 </h1>
-                <div style={{marginBottom: "10px"}}>
+                <div style={{ marginBottom: "10px" }}>
                     <FontAwesomeIcon icon={faGithub} />
                     &nbsp;
                     <a className="repo-link" href="https://www.github.com/bradleyyang/McHacksApp" target="_blank">GitHub Repository</a>
@@ -57,14 +56,14 @@ const Memo = () => {
                 </div>
             </div>
             <div>
-                <img src={memodemo} alt="memo-demo" style={{width: "50%"}}/>
-                <div style={{marginTop: "20px", marginBottom: "20px"}}>
+                <img src={memodemo} alt="memo-demo" style={{ width: "50%" }} />
+                <div style={{ marginTop: "20px", marginBottom: "20px" }}>
                     Memo takes snapshots of receipts using the webcam, processing the data and returning insightful feedback on spending habits.
                     Details include time and location of purchases, price of purchases, and name of stores.
                     Memo then displays the information in a visually appealing user interface for users to easily analyze their spending.
                 </div>
 
-                <img src={memoscreenshot} alt="memo-screenshot" style={{width: "50%"}}/>
+                <img src={memoscreenshot} alt="memo-screenshot" style={{ width: "50%" }} />
             </div>
         </div>
     );

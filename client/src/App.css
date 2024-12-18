@@ -27,7 +27,7 @@ body {
     border-radius: 5px;
     border-color: black;
     border-width: 1px;
-    min-height: 25px;
+    min-height: 30px;
     min-width: 60px;
 }
 
@@ -106,7 +106,7 @@ body {
     width: fit-content;
 }
 
-.back-to-home {
+.back-button {
     cursor: pointer;
     background-color:#0a0a23;
     color: #fff;
@@ -117,12 +117,13 @@ body {
     min-width: 60px;
 }
 
-.back-to-home:hover {
+.back-button:hover {
     background-color: white;
     border-color: black;
     color: black;
     transition: 0.7s;
 }
+
 
 .job-title {
     font-style: italic;
@@ -131,4 +132,4 @@ body {
 
 .repo-link {
     color: inherit;
-}
+}   

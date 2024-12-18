@@ -2,17 +2,16 @@ import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExternalLink } from '@fortawesome/free-solid-svg-icons';
 
+
 const Haneco = () => {
     const navigate = useNavigate();
     return (
         <div>
             <nav className="navbar">
-                <button className="back-to-home"
-                    onClick={() => {
-                        navigate('/');
-                    }}
-                >
-                    Back to home
+                <button className="back-button" onClick={() => {
+                    navigate(-1);
+                }}>
+                    Back
                 </button>
                 <div className="menu">
                     <button style={{ marginRight: "5px" }}

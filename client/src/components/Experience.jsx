@@ -1,19 +1,20 @@
 import { useNavigate } from "react-router-dom";
 
+
 const Experience = () => {
     const navigate = useNavigate();
     return (
         <div>
             <nav className="navbar">
-                <button className="back-to-home" onClick={() => {
+                <button className="back-button" onClick={() => {
                     navigate("/");
                 }}>
-                    Back to home
+                    Home
                 </button>
                 <div className="menu">
                     <button style={{ marginRight: "5px" }}
                         onClick={() => {
-                            navigate("/experience");
+                            navigate(-1);
                         }}>
                         Experience
                     </button>
