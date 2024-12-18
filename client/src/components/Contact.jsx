@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import "../Contact.css";
 import "../App.css";
+import axios from "axios";
 
 
 const Contact = () => {
@@ -9,20 +10,13 @@ const Contact = () => {
 
     const [buttonText, setButtonText] = useState("Submit");
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        setButtonText("Submitted");
-
-        setTimeout(() => {
-            setButtonText("Submit");
-        }, 1000);
-    };
-
     const [formData, setFormData] = useState({
         email: "",
         name: "",
         message: "",
     });
+
+
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -31,6 +25,34 @@ const Contact = () => {
             [name]: value,
         }));
     };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        setButtonText("Submitted");
+
+        axios
+            .post("http://localhost:3000/contact", formData)
+            .then(function (response) {
+                console.log("Response:", response.data);
+            })
+            .catch(function (error) {
+                console.error("Error:", error.response ? error.response.data : error.message);
+            });
+
+        setFormData({
+            email: "",
+            name: "",
+            message: "",
+        });
+
+        setTimeout(() => {
+            setButtonText("Submit");
+        }, 1000);
+    };
+
+
+
+
 
     return (
         <div className="contact-page">
@@ -56,7 +78,7 @@ const Contact = () => {
                     <input
                         className="input-field"
                         placeholder="Email"
-                        type="text"
+                        type="email"
                         name="email"
                         value={formData.email}
                         onChange={handleChange}
@@ -80,7 +102,7 @@ const Contact = () => {
                         value={formData.message}
                         onChange={handleChange}
                         required="true"
-                        style={{ height: "100px", resize: "vertical" }}
+                        style={{ minHeight: "100px", height: "100px", resize: "vertical" }}
                     ></textarea>
                     <button className="submit-button" type="submit">
                         {buttonText}
