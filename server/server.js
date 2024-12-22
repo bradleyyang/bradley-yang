@@ -10,7 +10,7 @@ const cors = require('cors');
 
 
 app.use(cors({
-  origin: 'https://bradley-yang.vercel.app/contact', // Update with your Vercel frontend URL
+  origin: 'https://bradley-yang-fuswjegcb-bradley-yangs-projects.vercel.app', // Update with your Vercel frontend URL
   methods: ['POST', 'GET'], // Allow GET and POST methods
   credentials: true, // If you're using cookies, this is important
 }));
