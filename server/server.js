@@ -7,9 +7,11 @@ const nodemailer = require("nodemailer");
 app.use(express.json());
 app.use(express.urlencoded()); 
 const cors = require('cors');
-app.use(cors());
 
 
+app.use(cors({
+  origin: 'https://bradley-yang.vercel.app/', // Replace with your Vercel domain
+}));
 
 let transporter = nodemailer.createTransport({
   service: 'gmail',
