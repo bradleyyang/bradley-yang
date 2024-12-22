@@ -48,6 +48,8 @@ app.post('/contact', (req, res) => {
       console.log("Email sent successfully");
     }
   });
+
+  res.send("successful");
 });
 
 
