@@ -30,7 +30,7 @@ const Contact = () => {
         e.preventDefault();
         setButtonText("Submitted");
 
-        const API_URL = process.env.REACT_APP_API_URL;
+        const API_URL = process.env.REACT_APP_API_URL || "https://bradley-yang.onrender.com";
         console.log("API URL:", API_URL);
         axios.post(`${API_URL}/contact`, formData)
             .then(function (response) {
