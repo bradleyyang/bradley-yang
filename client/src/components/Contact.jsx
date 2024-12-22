@@ -30,7 +30,7 @@ const Contact = () => {
         e.preventDefault();
         setButtonText("Submitted");
 
-        const API_URL = process.env.REACT_APP_API_URL || "http://localhost:3000";
+        const API_URL = process.env.REACT_APP_API_URL;
 
         axios.post(`${API_URL}/contact`, formData)
             .then(function (response) {
