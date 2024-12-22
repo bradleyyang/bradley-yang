@@ -9,6 +9,14 @@ app.use(express.urlencoded());
 const cors = require('cors');
 app.use(cors());
 
+//This middleware will tell the application to use the built react-app
+app.use(express.static(path.join(__dirname, "public")));
+
+//Put this after all middleware. Otherwise, Heroku will give you 304 page
+app.get("*", function (req, res) {
+  res.sendFile(path.join(__dirname, "public", "index.html"));
+});
+
 let transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
