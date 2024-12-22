@@ -10,7 +10,7 @@ const cors = require('cors');
 
 
 app.use(cors({
-  origin: 'https://bradley-yang.vercel.app/', // Replace with your Vercel domain
+  origin: 'https://bradley-yang.vercel.app', // Replace with your Vercel domain
 }));
 
 let transporter = nodemailer.createTransport({
