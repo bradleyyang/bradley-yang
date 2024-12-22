@@ -42,8 +42,18 @@ const Home = () => {
 				Math @ UWaterloo, incoming Software Developer Intern at &nbsp;<FontAwesomeIcon style={{ color: "#00538C" }} icon={faExternalLink} />&nbsp;<a className="hyperlink-social" href="https://www.aethoslabs.com/" target="_blank">Aethos Labs</a>.
 			</div>
 			<div className="socials-intro">
-				<FontAwesomeIcon icon={faEnvelope} /> &nbsp; bradley.yang023@gmail.com &nbsp; &nbsp; <FontAwesomeIcon style={{ color: "#00538C" }} icon={faExternalLink} />&nbsp;<a className="hyperlink-social" href="https://www.linkedin.com/in/bradley-yang/" target="_blank">LinkedIn</a>
-				&nbsp; &nbsp; <FontAwesomeIcon style={{ color: "#00538C" }} icon={faExternalLink} />&nbsp;<a className="hyperlink-social" href="https://www.github.com/bradleyyang" target="_blank">GitHub</a>
+				<div style={{display: "flex", flexDirection: "row", alignItems: "center", gap: "10px"}}>
+					<FontAwesomeIcon icon={faEnvelope} />
+					<div>
+						bradley.yang023@gmail.com
+					</div>
+				</div>
+				<div>
+					<FontAwesomeIcon style={{ color: "#00538C" }} icon={faExternalLink} />&nbsp;<a className="hyperlink-social" href="https://www.linkedin.com/in/bradley-yang/" target="_blank">LinkedIn</a>
+				</div>
+				<div>
+					<FontAwesomeIcon style={{ color: "#00538C" }} icon={faExternalLink} />&nbsp;<a className="hyperlink-social" href="https://www.github.com/bradleyyang" target="_blank">GitHub</a>
+				</div>
 			</div>
 			<div className="overview-topics">
 				<h3 className="subheading-homepage">Experience</h3>
@@ -67,7 +77,7 @@ const Home = () => {
 				<div onClick={() => { navigate("/projects/memo") }} className="subheading-overview">
 					<p className="subheading-title">Memo</p>
 					<p>
-						Automates budget tracking by saving receipts with a snapshot of your camera. 
+						Automates budget tracking by saving receipts with a snapshot of your camera.
 						Built with Python and OpenCV, it uses Python-tesseract to read text from a picture.
 						This project won the best beginner prize at McGill University's annual hackathon.
 					</p>
