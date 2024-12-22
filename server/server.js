@@ -25,7 +25,9 @@ let transporter = nodemailer.createTransport({
   }
 });
 
-
+app.get('/', (req, res) => {
+  res.send("hello");
+}); 
 
 app.post('/contact', (req, res) => {
   
