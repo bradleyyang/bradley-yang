@@ -3,7 +3,6 @@ import { useState } from "react";
 import "../Contact.css";
 import "../App.css";
 import axios from "axios";
-import { fetchResource } from '../api';
 
 
 const Contact = () => {
