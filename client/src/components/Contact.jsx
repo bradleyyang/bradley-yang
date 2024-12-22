@@ -32,12 +32,7 @@ const Contact = () => {
 
         const API_URL = process.env.REACT_APP_API_URL || "http://localhost:3000";
 
-        axios
-            .post(`${API_URL}/contact`, formData, {
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-            })
+        axios.post(`${API_URL}/contact`, formData)
             .then(function (response) {
                 console.log("Response:", response.data);
             })
