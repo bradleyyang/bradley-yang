@@ -31,7 +31,7 @@ const Contact = () => {
         setButtonText("Submitted");
 
         const API_URL = process.env.REACT_APP_API_URL;
-
+        console.log("API URL:", API_URL);
         axios.post(`${API_URL}/contact`, formData)
             .then(function (response) {
                 console.log("Response:", response.data);
