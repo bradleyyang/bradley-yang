@@ -74,6 +74,7 @@ const Contact = () => {
                 </div>
             </nav>
             <hr style={{ marginTop: "15px", marginBottom: "15px" }} />
+            <h2 style={{display: "flex", justifyContent: "center", alignItems: "center"}}>Contact Me</h2>
             <div className="form-container">
                 <form className="contact-form" onSubmit={handleSubmit}>
                     <input
@@ -84,7 +85,6 @@ const Contact = () => {
                         value={formData.email}
                         onChange={handleChange}
                         required="true"
-                        style={{ height: "25px" }}
                     />
                     <input
                         className="input-field"
@@ -94,16 +94,15 @@ const Contact = () => {
                         value={formData.name}
                         onChange={handleChange}
                         required="true"
-                        style={{ height: "25px" }}
                     />
                     <textarea
                         className="input-field"
+                        id="message-box"
                         placeholder="Message"
                         name="message"
                         value={formData.message}
                         onChange={handleChange}
                         required="true"
-                        style={{ minHeight: "100px", height: "100px", resize: "vertical" }}
                     ></textarea>
                     <button className="submit-button" type="submit">
                         {buttonText}
