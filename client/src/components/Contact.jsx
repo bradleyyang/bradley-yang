@@ -3,6 +3,7 @@ import { useState } from "react";
 import "../Contact.css";
 import "../App.css";
 import axios from "axios";
+import { fetchResource } from '../api';
 
 
 const Contact = () => {
@@ -30,8 +31,10 @@ const Contact = () => {
         e.preventDefault();
         setButtonText("Submitted");
 
+        const API_URL = process.env.REACT_APP_API_URL || "http://localhost:3000";
+
         axios
-            .post("http://localhost:3000/contact", formData)
+            .post(`${API_URL}/contact`, formData)
             .then(function (response) {
                 console.log("Response:", response.data);
             })
