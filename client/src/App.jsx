@@ -3,7 +3,6 @@ import Contact from './components/Contact';
 import Projects from './components/Projects';
 import Experience from './components/Experience';
 import Haneco from './components/Haneco';
-import AethosLabs from './components/AethosLabs';
 import Memo from './components/Memo';
 import SparkSense from './components/SparkSense';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
@@ -26,10 +25,6 @@ function App() {
         {
             path: '/experience',
             element: <Experience />
-        },
-        {
-            path: '/experience/aethoslabs',
-            element: <AethosLabs />   
         },
         {
             path: '/experience/haneco',

@@ -39,7 +39,7 @@ const Home = () => {
 			</nav>
 			<hr style={{ marginTop: "15px", marginBottom: "15px" }} />
 			<div style={{ fontSize: "large" }}>
-				Math @ UWaterloo, incoming Software Developer Intern at &nbsp;<FontAwesomeIcon style={{ color: "#00538C" }} icon={faExternalLink} />&nbsp;<a className="hyperlink-social" href="https://www.aethoslabs.com/" target="_blank">Aethos Labs</a>.
+				Math @ UWaterloo
 			</div>
 			<div className="socials-intro">
 				<div style={{display: "flex", flexDirection: "row", alignItems: "center", gap: "10px"}}>
@@ -57,11 +57,6 @@ const Home = () => {
 			</div>
 			<div className="overview-topics">
 				<h3 className="subheading-homepage">Experience</h3>
-				<div onClick={() => { navigate("/experience/aethoslabs") }} className="subheading-overview">
-					<p className="subheading-title">Aethos Labs</p>
-					<p className="job-title">Software Developer Intern</p>
-					<p>Incoming full stack developer intern for Winter 2025.</p>
-				</div>
 				<div onClick={() => { navigate("/experience/haneco") }} className="subheading-overview">
 					<p className="subheading-title">Haneco Lighting Canada Inc.</p>
 					<p className="job-title">Sales and Marketing Intern</p>
@@ -95,7 +90,7 @@ const Home = () => {
 
 			</div>
 			<div className="footer">
-				<p>&copy; 2024 Bradley Yang</p>
+				<p>&copy; 2025 Bradley Yang</p>
 				<p className="socials">
 					<a href="mailto: bradley.yang023@gmail.com"><FontAwesomeIcon icon={faEnvelope} /></a>
 					<a target="_blank" href="https://github.com/bradleyyang"><FontAwesomeIcon icon={faGithub} /></a>
