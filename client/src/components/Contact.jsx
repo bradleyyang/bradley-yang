@@ -30,16 +30,7 @@ const Contact = () => {
         e.preventDefault();
         setButtonText("Submitted");
 
-        const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000';
-        console.log("API URL:", API_URL);
-        axios.post(`${API_URL}/contact`, formData)
-            .then(function (response) {
-                console.log("Response:", response.data);
-            })
-            .catch(function (error) {
-                console.error("Error:", error.response ? error.response.data : error.message);
-            });
-
+        
         setFormData({
             email: "",
             name: "",
