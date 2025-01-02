@@ -75,7 +75,7 @@ const Contact = () => {
                         name="email"
                         value={formData.email}
                         onChange={handleChange}
-                        required="true"
+                        required={true}
                     />
                     <input
                         className="input-field"
@@ -84,7 +84,7 @@ const Contact = () => {
                         name="name"
                         value={formData.name}
                         onChange={handleChange}
-                        required="true"
+                        required={true}
                     />
                     <textarea
                         className="input-field"
@@ -93,7 +93,7 @@ const Contact = () => {
                         name="message"
                         value={formData.message}
                         onChange={handleChange}
-                        required="true"
+                        required={true}
                     ></textarea>
                     <button className="submit-button" type="submit">
                         {buttonText}
