@@ -1,5 +1,4 @@
 import Home from './components/Home';
-import Contact from './components/Contact';
 import Projects from './components/Projects';
 import Experience from './components/Experience';
 import Haneco from './components/Haneco';
@@ -13,10 +12,6 @@ function App() {
         {
             path: '/',
             element: <Home />,
-        },
-        {
-            path: '/contact',
-            element: <Contact />,
         },
         {
             path: '/projects',

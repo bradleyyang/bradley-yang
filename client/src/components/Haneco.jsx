@@ -21,19 +21,12 @@ const Haneco = () => {
                         Experience
                     </button>
 
-                    <button style={{ marginRight: "5px" }}
+                    <button
                         onClick={() => {
                             navigate("/projects");
                         }}
                     >
                         Projects
-                    </button>
-                    <button
-                        onClick={() => {
-                            navigate("/contact");
-                        }}
-                    >
-                        Contact
                     </button>
                 </div>
             </nav>
