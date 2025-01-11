@@ -38,7 +38,7 @@ const Experience = () => {
             <div onClick={() => { navigate("/experience/haneco") }} className="subheading-overview">
                 <p className="subheading-title">Haneco Lighting Canada Inc.</p>
                 <p className="job-title">Sales and Marketing Intern</p>
-                <p>Cold called potential clients and scheduled lighting/EV charging audits for commercial facilities.</p>
+                <p>Internship at Haneco focused on business development, client outreach, lead management, and creating sales pipelines using CRM systems.</p>
             </div>
         </div>
     );
