@@ -2,8 +2,7 @@ import Home from './components/Home';
 import Projects from './components/Projects';
 import Experience from './components/Experience';
 import Haneco from './components/Haneco';
-import Memo from './components/Memo';
-import SparkSense from './components/SparkSense';
+import StockPredictor from './components/StockPredictor';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
 
@@ -15,25 +14,20 @@ function App() {
         },
         {
             path: '/projects',
-            element: <Projects />
+            element: <Projects />,
         },
         {
             path: '/experience',
-            element: <Experience />
+            element: <Experience />,
         },
         {
             path: '/experience/haneco',
-            element: <Haneco />
+            element: <Haneco />,
         },
         {
-            path: '/projects/sparksense',
-            element: <SparkSense />
-        },
-        {
-            path: '/projects/memo',
-            element: <Memo />
+            path: '/projects/stock-predictor',
+            element: <StockPredictor />,
         }
-
     ]);
 
     return (

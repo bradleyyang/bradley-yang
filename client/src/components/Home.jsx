@@ -53,34 +53,23 @@ const Home = () => {
 				<div onClick={() => { navigate("/experience/haneco") }} className="subheading-overview">
 					<p className="subheading-title">Haneco Lighting Canada Inc.</p>
 					<p className="job-title">Sales and Marketing Intern</p>
-					<p>Cold called potential clients and scheduled lighting/EV charging audits for commercial facilities.</p>
+					<p>Internship at Haneco focused on business development, client outreach, lead management, and creating sales pipelines using CRM systems.</p>
 				</div>
 				<div className="see-more">
 					<div onClick={() => { navigate("/experience") }} className="see-more-button">
 						See More
 					</div>
 				</div>
-
 				<h3 className="subheading-homepage">Projects</h3>
-				<div onClick={() => { navigate("/projects/memo") }} className="subheading-overview">
-					<p className="subheading-title">Memo</p>
-					<p>
-						Automates budget tracking by saving receipts with a snapshot of your camera.
-						Built with Python and OpenCV, it uses Python-tesseract to read text from a picture.
-						This project won the best beginner prize at McGill University's annual hackathon.
-					</p>
-				</div>
-				<div onClick={() => { navigate("/projects/sparksense") }} className="subheading-overview">
-					<p className="subheading-title">SparkSense</p>
-					<p>Predicts likelihood of wildfires for cities in Canada and sends warnings via Twilio's SMS messaging API. It leverages the power of the Gemini LLM.</p>
+				<div onClick={() => { navigate("/projects/stock-predictor") }} className="subheading-overview">
+					<p className="subheading-title">Stock Predictor</p>
+					<p>Building a stock predictor with scikit-learn and Python.</p>
 				</div>
 				<div className="see-more">
 					<div onClick={() => { navigate("/projects") }} className="see-more-button">
 						See More
 					</div>
 				</div>
-
-
 			</div>
 			<div className="footer">
 				<p>&copy; 2025 Bradley Yang</p>
