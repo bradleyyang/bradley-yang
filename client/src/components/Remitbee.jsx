@@ -1,20 +1,22 @@
 import { useNavigate } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faExternalLink } from '@fortawesome/free-solid-svg-icons';
 
 
-const Experience = () => {
+const Remitbee = () => {
     const navigate = useNavigate();
     return (
         <div>
             <nav className="navbar">
                 <button className="back-button" onClick={() => {
-                    navigate("/");
+                    navigate(-1);
                 }}>
-                    Home
+                    Back
                 </button>
                 <div className="menu">
                     <button style={{ marginRight: "5px" }}
                         onClick={() => {
-                            navigate(-1);
+                            navigate("/experience");
                         }}>
                         Experience
                     </button>
@@ -29,19 +31,14 @@ const Experience = () => {
                 </div>
             </nav>
             <hr style={{ marginTop: "15px", marginBottom: "15px" }} />
-            <h3 className="subheading-homepage">Experience</h3>
-            <div onClick={() => { navigate("/experience/remitbee") }} className="subheading-overview">
-                <p className="subheading-title">Remitbee Inc.</p>
-                <p className="job-title">AI Research Intern</p>
-                <p>Working on an AI stock/currency predictor dashboard.</p>
+            <div>
+                Working on an AI stock/currency predictor dashboard.
             </div>
-            <div onClick={() => { navigate("/experience/haneco") }} className="subheading-overview">
-                <p className="subheading-title">Haneco Lighting Canada Inc.</p>
-                <p className="job-title">Sales and Marketing Intern</p>
-                <p>Cold called potential clients and scheduled lighting/EV charging audits for commercial facilities.</p>
+            <div style={{ marginTop: "15px" }}>
+                <FontAwesomeIcon style={{ color: "#00538C" }} icon={faExternalLink} />&nbsp;<a className="hyperlink-social" href="https://www.remitbee.com/" target="_blank">Learn more about Remitbee</a>
             </div>
         </div>
     );
 };
 
-export default Experience;
+export default Remitbee;

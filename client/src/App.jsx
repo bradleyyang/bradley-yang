@@ -2,6 +2,7 @@ import Home from './components/Home';
 import Projects from './components/Projects';
 import Experience from './components/Experience';
 import Haneco from './components/Haneco';
+import Remitbee from './components/Remitbee';
 import StockPredictor from './components/StockPredictor';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
@@ -23,6 +24,10 @@ function App() {
         {
             path: '/experience/haneco',
             element: <Haneco />,
+        },
+        {
+            path: '/experience/remitbee',
+            element: <Remitbee />,
         },
         {
             path: '/projects/stock-predictor',

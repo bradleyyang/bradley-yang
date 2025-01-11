@@ -35,7 +35,7 @@ const Home = () => {
 				Math @ UWaterloo
 			</div>
 			<div className="socials-intro">
-				<div style={{display: "flex", flexDirection: "row", alignItems: "center", gap: "10px"}}>
+				<div style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: "10px" }}>
 					<FontAwesomeIcon icon={faEnvelope} />
 					<div>
 						bradley.yang023@gmail.com
@@ -50,6 +50,11 @@ const Home = () => {
 			</div>
 			<div className="overview-topics">
 				<h3 className="subheading-homepage">Experience</h3>
+				<div onClick={() => { navigate("/experience/remitbee") }} className="subheading-overview">
+					<p className="subheading-title">Remitbee Inc.</p>
+					<p className="job-title">AI Research Intern</p>
+					<p>Working on an AI stock/currency predictor dashboard.</p>
+				</div>
 				<div onClick={() => { navigate("/experience/haneco") }} className="subheading-overview">
 					<p className="subheading-title">Haneco Lighting Canada Inc.</p>
 					<p className="job-title">Sales and Marketing Intern</p>
