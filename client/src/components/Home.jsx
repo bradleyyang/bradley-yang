@@ -50,12 +50,12 @@ const Home = () => {
 			</div>
 			<div className="overview-topics">
 				<h3 className="subheading-homepage">Experience</h3>
-				<div onClick={() => { navigate("/experience/remitbee") }} className="subheading-overview">
+				<div onClick={() => { navigate("/remitbee") }} className="subheading-overview">
 					<p className="subheading-title">Remitbee Inc.</p>
 					<p className="job-title">AI Research Intern</p>
 					<p>Working on an AI stock/currency predictor dashboard.</p>
 				</div>
-				<div onClick={() => { navigate("/experience/haneco") }} className="subheading-overview">
+				<div onClick={() => { navigate("/haneco") }} className="subheading-overview">
 					<p className="subheading-title">Haneco Lighting Canada Inc.</p>
 					<p className="job-title">Sales and Marketing Intern</p>
 					<p>Internship at Haneco focused on business development, client outreach, lead management, and creating sales pipelines using CRM systems.</p>
@@ -66,7 +66,7 @@ const Home = () => {
 					</div>
 				</div>
 				<h3 className="subheading-homepage">Projects</h3>
-				<div onClick={() => { navigate("/projects/stock-predictor") }} className="subheading-overview">
+				<div onClick={() => { navigate("/stock-predictor") }} className="subheading-overview">
 					<p className="subheading-title">Stock Predictor</p>
 					<p>Building a stock predictor with scikit-learn and Python.</p>
 				</div>

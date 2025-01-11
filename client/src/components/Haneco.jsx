@@ -32,9 +32,8 @@ const Haneco = () => {
             </nav>
             <hr style={{ marginTop: "15px", marginBottom: "15px" }} />
             <div>
-                During my internship at Haneco, I focused on business development by reaching out to potential clients through cold emails and phone calls.
-                Collaborating with a team, I enhanced my communication and prospecting skills, particularly in negotiating with facility and operations managers.
-                I also utilized CRM systems to manage leads and track outreach efforts, helping to establish pipelines that generated significant business opportunities.
+                Conducted cold outreach to potential clients through email and phone, managing leads and tracking outreach using CRM systems.
+                This process helped establish sales pipelines and generate new business opportunities.
             </div>
             <div style={{ marginTop: "15px" }}>
                 <FontAwesomeIcon style={{ color: "#00538C" }} icon={faExternalLink} />&nbsp;<a className="hyperlink-social" href="https://www.haneco.ca/" target="_blank">Learn more about Haneco</a>

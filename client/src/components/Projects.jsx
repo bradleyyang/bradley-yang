@@ -29,7 +29,7 @@ const Projects = () => {
             </nav>
             <hr style={{ marginTop: "15px", marginBottom: "15px" }} />
             <h3 className="subheading-homepage">Projects</h3>
-            <div onClick={() => { navigate("/projects/stock-predictor") }} className="subheading-overview">
+            <div onClick={() => { navigate("/stock-predictor") }} className="subheading-overview">
                 <p className="subheading-title">Stock Predictor</p>
                 <p>Building a stock predictor with scikit-learn and Python.</p>
             </div>

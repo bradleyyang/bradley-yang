@@ -22,15 +22,15 @@ function App() {
             element: <Experience />,
         },
         {
-            path: '/experience/haneco',
+            path: '/haneco',
             element: <Haneco />,
         },
         {
-            path: '/experience/remitbee',
+            path: '/remitbee',
             element: <Remitbee />,
         },
         {
-            path: '/projects/stock-predictor',
+            path: '/stock-predictor',
             element: <StockPredictor />,
         }
     ]);
