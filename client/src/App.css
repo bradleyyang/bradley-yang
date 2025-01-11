@@ -29,14 +29,19 @@ body {
     border-color: black;
     border-width: 1px;
     min-height: 30px;
-    min-width: 60px;
+    min-width: 90px;
 }
 
 .menu button:hover {
-    background-color: rgb(200, 200, 200);
+    background-color: rgb(225, 225, 225);
     border-color: black;
     color: black;
-    transition: 0.7s;
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+#projects-button {
+    min-width: 70px;
 }
 
 .footer {
@@ -119,10 +124,11 @@ body {
 }
 
 .back-button:hover {
-    background-color: rgb(200, 200, 200);
+    background-color: rgb(225, 225, 225);
     border-color: black;
     color: black;
-    transition: 0.7s;
+    transition: 0.5s;
+    font-weight: bold;
 }
 
 .job-title {

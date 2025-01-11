@@ -20,7 +20,7 @@ const StockPredictor = () => {
                         Experience
                     </button>
 
-                    <button
+                    <button id="projects-button"
                         onClick={() => {
                             navigate("/projects");
                         }}

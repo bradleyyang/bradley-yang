@@ -18,7 +18,7 @@ const Projects = () => {
                         Experience
                     </button>
 
-                    <button
+                    <button id="projects-button"
                         onClick={() => {
                             navigate("/projects");
                         }}
