@@ -3,7 +3,6 @@ import Projects from './components/Projects';
 import Experience from './components/Experience';
 import Haneco from './components/Haneco';
 import Remitbee from './components/Remitbee';
-import StockPredictor from './components/StockPredictor';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
 
@@ -29,10 +28,6 @@ function App() {
             path: '/remitbee',
             element: <Remitbee />,
         },
-        {
-            path: '/stock-predictor',
-            element: <StockPredictor />,
-        }
     ]);
 
     return (

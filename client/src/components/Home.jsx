@@ -65,16 +65,6 @@ const Home = () => {
 						See More
 					</div>
 				</div>
-				<h3 className="subheading-homepage">Projects</h3>
-				<div onClick={() => { navigate("/stock-predictor") }} className="subheading-overview">
-					<p className="subheading-title">Stock Predictor</p>
-					<p>Building a stock predictor with scikit-learn and Python.</p>
-				</div>
-				<div className="see-more">
-					<div onClick={() => { navigate("/projects") }} className="see-more-button">
-						See More
-					</div>
-				</div>
 			</div>
 			<div className="footer">
 				<p>&copy; 2025 Bradley Yang</p>
