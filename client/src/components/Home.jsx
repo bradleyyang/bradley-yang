@@ -32,15 +32,15 @@ const Home = () => {
 			</nav>
 			<hr style={{ marginTop: "15px", marginBottom: "15px" }} />
 			<div style={{ fontSize: "large" }}>
-				Math @ UWaterloo
+				Math student at University of Waterloo
+			</div>
+			<div style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: "5px", marginTop: "10px" }}>
+				<FontAwesomeIcon icon={faEnvelope} />
+				<div>
+					bradley (dot) yang023 (at) gmail (dot) com
+				</div>
 			</div>
 			<div className="socials-intro">
-				<div style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: "10px" }}>
-					<FontAwesomeIcon icon={faEnvelope} />
-					<div>
-						bradley.yang023@gmail.com
-					</div>
-				</div>
 				<div>
 					<FontAwesomeIcon style={{ color: "#00538C" }} icon={faExternalLink} />&nbsp;<a className="hyperlink-social" href="https://www.linkedin.com/in/bradley-yang/" target="_blank">LinkedIn</a>
 				</div>
@@ -69,7 +69,6 @@ const Home = () => {
 			<div className="footer">
 				<p>&copy; 2025 Bradley Yang</p>
 				<p className="socials">
-					<a href="mailto: bradley.yang023@gmail.com"><FontAwesomeIcon icon={faEnvelope} /></a>
 					<a target="_blank" href="https://github.com/bradleyyang"><FontAwesomeIcon icon={faGithub} /></a>
 					<a target="_blank" href="https://linkedin.com/in/bradley-yang"><FontAwesomeIcon icon={faLinkedin} /></a>
 				</p>

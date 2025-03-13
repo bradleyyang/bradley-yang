@@ -77,7 +77,7 @@ body {
     margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 10px;
 }
 
 .subheading-overview {
