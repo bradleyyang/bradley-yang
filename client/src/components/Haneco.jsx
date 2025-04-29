@@ -32,8 +32,7 @@ const Haneco = () => {
             </nav>
             <hr style={{ marginTop: "15px", marginBottom: "15px" }} />
             <div>
-                Conducted cold outreach to potential clients through email and phone, managing leads and tracking outreach using CRM systems.
-                This process helped establish sales pipelines and generate new business opportunities.
+                Executed cold calls and used CRM tools to manage leads and build sales pipelines, driving new business opportunities.
             </div>
             <div style={{ marginTop: "15px" }}>
                 <FontAwesomeIcon style={{ color: "#00538C" }} icon={faExternalLink} />&nbsp;<a className="hyperlink-social" href="https://www.haneco.ca/" target="_blank">Learn more about Haneco</a>

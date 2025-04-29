@@ -33,12 +33,12 @@ const Experience = () => {
             <div onClick={() => { navigate("/remitbee") }} className="subheading-overview">
                 <p className="subheading-title">Remitbee Inc.</p>
                 <p className="job-title">AI Research Intern</p>
-                <p>Working on an AI prediction model for stock and forex markets.</p>
+                <p>Developed AI models to forecast financial markets.</p>
             </div>
             <div onClick={() => { navigate("/haneco") }} className="subheading-overview">
                 <p className="subheading-title">Haneco Lighting Canada Inc.</p>
                 <p className="job-title">Sales and Marketing Intern</p>
-                <p>Internship at Haneco focused on business development, client outreach, lead management, and creating sales pipelines using CRM systems.</p>
+                <p>Learned a lot about business development, client outreach, and creating sales pipelines using CRM systems.</p>
             </div>
         </div>
     );
