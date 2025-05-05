@@ -32,7 +32,7 @@ const Remitbee = () => {
             </nav>
             <hr style={{ marginTop: "15px", marginBottom: "15px" }} />
             <div>
-                I researched and developed RNNs for time series forecasting.
+                I researched and developed machine learning models for time series forecasting.
             </div>
             <div style={{ marginTop: "15px" }}>
                 <FontAwesomeIcon style={{ color: "#00538C" }} icon={faExternalLink} />&nbsp;<a className="hyperlink-social" href="https://www.remitbee.com/" target="_blank">Learn more about Remitbee</a>
