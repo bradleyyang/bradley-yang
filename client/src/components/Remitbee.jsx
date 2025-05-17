@@ -9,7 +9,7 @@ const Remitbee = () => {
         <div>
             <nav className="navbar">
                 <button className="back-button" onClick={() => {
-                    navigate(-1);
+                    navigate('/experience');
                 }}>
                     Back
                 </button>
