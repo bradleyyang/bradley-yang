@@ -33,11 +33,9 @@ body {
 }
 
 .menu button:hover {
-    background-color: rgb(225, 225, 225);
+    background-color: rgb(245, 245, 245);
     border-color: black;
     color: black;
-    transition: 0.5s;
-    font-weight: bold;
 }
 
 #projects-button {
@@ -124,11 +122,9 @@ body {
 }
 
 .back-button:hover {
-    background-color: rgb(225, 225, 225);
+    background-color: rgb(245, 245, 245);
     border-color: black;
     color: black;
-    transition: 0.5s;
-    font-weight: bold;
 }
 
 .job-title {
