@@ -3,7 +3,6 @@ body {
     padding-bottom: 20px;
     padding-left: 5%;
     padding-right: 5%;
-    
 }
 
 .navbar {
@@ -23,7 +22,7 @@ body {
 
 .menu button {
     cursor: pointer;
-    background-color:#0a0a23;
+    background-color: #0a0a23;
     color: #fff;
     border-radius: 5px;
     border-color: black;
@@ -59,11 +58,11 @@ body {
 }
 
 .socials a:hover {
-    color: #00538C;
+    color: #00538c;
 }
 
 .hyperlink-social {
-    color: #00538C;
+    color: #00538c;
     text-decoration: none;
 }
 
@@ -88,31 +87,31 @@ body {
 }
 
 .subheading-overview:hover {
-    border-color: #00538C;
+    border-color: #00538c;
 }
 
 .subheading-title {
     font-size: large;
 }
 
-.see-more {
+.subheading-homepage-container {
     display: flex;
-    justify-content: center;
+    align-items: baseline;
+    justify-content: space-between;
 }
 
-.see-more-button:hover {
-    color: #00538C;
+.view-full-experience-button:hover {
+    color: #00538c;
 }
 
-.see-more-button {
+.view-full-experience-button {
     cursor: pointer;
     color: gray;
-    width: fit-content;
 }
 
 .back-button {
     cursor: pointer;
-    background-color:#0a0a23;
+    background-color: #0a0a23;
     color: #fff;
     border-radius: 5px;
     border-color: black;
@@ -134,4 +133,4 @@ body {
 
 .repo-link {
     color: inherit;
-}   
+}

@@ -49,7 +49,12 @@ const Home = () => {
 				</div>
 			</div>
 			<div className="overview-topics">
-				<h3 className="subheading-homepage">Experience</h3>
+				<div className="subheading-homepage-container">
+					<h3 className="subheading-homepage">Experience</h3>
+					<div onClick={() => { navigate("/experience") }} className="view-full-experience-button">
+						View Full Experience
+					</div>
+				</div>
 				<div onClick={() => { navigate("/remitbee") }} className="subheading-overview">
 					<p className="subheading-title">Remitbee Inc.</p>
 					<p className="job-title">AI Research Intern</p>
@@ -59,11 +64,6 @@ const Home = () => {
 					<p className="subheading-title">Haneco Lighting Canada Inc.</p>
 					<p className="job-title">Sales and Marketing Intern</p>
 					<p>Learned a lot about business development, client outreach, and creating sales pipelines using CRM systems.</p>
-				</div>
-				<div className="see-more">
-					<div onClick={() => { navigate("/experience") }} className="see-more-button">
-						See More
-					</div>
 				</div>
 			</div>
 			<div className="footer">
